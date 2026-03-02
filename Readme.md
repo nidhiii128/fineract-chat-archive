@@ -87,6 +87,10 @@ These also serve as working examples if you're looking for extra help installing
 
 * [#fineract unofficial main public chat](https://mifos.github.io/chat-archive/daily/fineract/) - [source code](https://github.com/mifos/chat-archive)
 
+## Contributor Guide
+
+See `CONTRIBUTING.md` for branch/PR workflow and validation checklist.
+
 ## History
 
 The [original intent](https://issues.apache.org/jira/browse/FINERACT-2171) of this code was to [archive every public Fineract chat message](https://lists.apache.org/thread/9x6rftxoc4kdwp754odqvktdq2cz106h) into a public, index-able, simple/static HTML website.
