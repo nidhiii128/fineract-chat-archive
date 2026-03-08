@@ -111,8 +111,10 @@ public final class ChatArchiveApp {
 
         LOG.info("Resolved " + resolution.resolved().size() + " channel(s).");
 
-        Instant windowStart = Instant.now()
-                .minus(Duration.ofDays(config.lookbackDays()));
+        Instant windowStart = LocalDate.now(ZoneOffset.UTC)
+                .atStartOfDay(ZoneOffset.UTC)
+                .minusDays(config.lookbackDays())
+                .toInstant();
         String windowOldest = SlackTimestamp.formatEpochSecond(windowStart.getEpochSecond());
 
         CursorStore cursorStore = new CursorStore(config.stateDir());
